@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="mystyle.css" rel="stylesheet" type="text/css"/>
+		<title>Customer Service Document</title> 
+	</head>
+	
+	<body>
+		<div id = "wrapper">
+			<div id = "header">
+				<h1>Customer Service</h1>
+				<a href = "customer.html">Customer Service  </a>
+				<a href = "warehouse.html">Warehouse Service  </a>
+				<a href = "insurance.html">Insurance Service  </a>
+				<a href = "supplier.html">Supplier Service  </a>
+				<a href = "garage.html">Garage Service</a>
+				</div>
+				<div id = "description">
+					<h3>Description</h3>
+					<p>This service used to generate a customer role and simulate customer's behavious.</p>
+					</br>
+				</div>
+				<div>
+				<p>url: <a href = "http://fastapps04.qut.edu.au/n8615136/CustomerService/CustomerService.svc">http://fastapps04.qut.edu.au/n8615136/CustomerService/CustomerService.svc</a></p>
+				<p></ b>url: <a href = "http://fastapps04.qut.edu.au/n8615136/CustomerService/CustomerService.svc?singleWsdl">http://fastapps04.qut.edu.au/n8615136/CustomerService/CustomerService.svc?singleWsdl</a></p>
+				</br>
+				</div>
+				<div id = "function">
+					<h3>Method Detail</h3>
+						<div id=generatename>
+							<h4>GenerateName</h4>
+							<p>string GenerateName()</p>
+							<p>return a random name type string</p>
+							</br>
+						</div>
+						<div id=request>
+							<h4>Request</h4>
+							<p>string Request()</p>
+							<p>return a random item name</p>
+							</br>
+						</div>
+						<div id=quantity>
+							<h4>Quantity</h4>
+							<p>int Quantity(string item)</p>
+							<p>Generate a random number of quantity.</p>
+							<h5>Parameters: item - the request item name</h5>
+							<p>return a random number</p>
+							</br>
+						</div>
+						<div id=checkquote>
+							<h4>CheckQuote</h4>
+							<p>bool CheckQuote(double quote)</p>
+							<p>Generate a random decision.</p>
+							<h5>Parameters: quote - the quote for request</h5>
+							<p>return true if accept the quote, false to reject</p>
+							</br>
+						<div id=delayaccept>
+							<h4>DelayAccept</h4>
+							<p>bool DelayAccept(int day)</p>
+							<p>Generate a random decision.</p>
+							<h5>Parameters: day - time need to wait</h5>
+							<p>return true if agreed delay, false to reject</p>
+							</br>
+						</div>	
+						</div>
+				</div>
+			<div id="footer"><p>2014 QUT INN374</p>
+			</div>
+		</div>
+	</body> 
+</html> 

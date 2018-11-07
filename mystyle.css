@@ -1,0 +1,45 @@
+#wrapper {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#header { 
+    height: 60px;
+    text-align: center;
+    background-color: #CCCCFF;
+}
+
+
+#header h1 {
+    margin: 0px;
+    padding: 10px;
+	color: #D01524;
+}
+
+#footer {
+	width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5px;
+    border-top: 1px dotted black;
+    background-color: #CCCCFF;
+    text-align: center;
+    clear: both;
+    height: 50px;
+	font-size:10pt;
+}
+
+#function h3 {
+    margin: 0px;
+}
+
+#function h4 {
+	color:#7B68EE;
+}
+
+#body {
+	min-width: 600px;
+	text-align:center;
+}

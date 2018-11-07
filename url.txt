@@ -1,0 +1,21 @@
+java
+
+restful garage
+http://fastws.qut.edu.au:8080/n8615136appointment/webresources/garage.appointment
+
+wsdl insurance	http://fastws.qut.edu.au:8080/InsuranceDepartment/InsuranceDepartment?wsdl
+
+
+c#
+
+wsdl warehouse
+http://fastapps04.qut.edu.au/n8615136/WarehouseService/WarehouseService.svc
+http://fastapps04.qut.edu.au/n8615136/WarehouseService/WarehouseService.svc?singleWsdl
+
+wsdl supplier
+http://fastapps04.qut.edu.au/n8615136/SupplierService/SupplierService.svc
+http://fastapps04.qut.edu.au/n8615136/SupplierService/SupplierService.svc?singleWsdl
+
+wsdl customer
+http://fastapps04.qut.edu.au/n8615136/CustomerService/CustomerService.svc
+http://fastapps04.qut.edu.au/n8615136/CustomerService/CustomerService.svc?singleWsdl

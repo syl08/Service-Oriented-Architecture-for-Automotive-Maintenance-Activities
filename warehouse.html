@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="mystyle.css" rel="stylesheet" type="text/css"/>
+		<title>Warehouse Service Document</title> 
+	</head>
+	
+	<body>
+		<div id = "wrapper">
+			<div id = "header">
+				<h1>Warehouse Service</h1>
+				<a href = "customer.html">Customer Service  </a>
+				<a href = "warehouse.html">Warehouse Service  </a>
+				<a href = "insurance.html">Insurance Service  </a>
+				<a href = "supplier.html">Supplier Service  </a>
+				<a href = "garage.html">Garage Service</a>
+				</div>
+				<div id = "description">
+					<h3>Description</h3>
+					<p>This service used to check whether item available in stock. Also it can modify database.</p>
+					</br>
+				</div>
+				<div>
+				<p>url: <a href = "http://fastapps04.qut.edu.au/n8615136/WarehouseService/WarehouseService.svc">http://fastapps04.qut.edu.au/n8615136/WarehouseService/WarehouseService.svc</a></p>
+				<p></ b>url: <a href = "http://fastapps04.qut.edu.au/n8615136/WarehouseService/WarehouseService.svc?singleWsdl">http://fastapps04.qut.edu.au/n8615136/WarehouseService/WarehouseService.svc?singleWsdl</a></p>
+				</br>
+				</div>
+				<div id=warehouse>
+					<p>public class Warehouse<p/>
+					</ br><p>Warehouse object contains item name and item number</p>
+					<h3>Constructor:</h3>
+					<p></ br>To store the item from database, it need a string to store item name and int to store item quantity</p>
+					<h3>Parameters:</h3>
+					</ br><p>string Item - the item name</p>
+					</ br><p>int Number - the item quantity<p>
+					</br>
+				</div>
+				<div id = "function">
+					<h3>Method Detail</h3>
+						<div id=getitems>
+							<h4>GetItems</h4>
+							<p>Warehouse[] GetItems()</p>
+							<p>Get the data from SQLServer, then store the data in Warehouse type list.</p>
+							<p>return an array of Warehouse</p>
+							</br>
+						</div>
+						<div id=insertitem>
+							<h4>InsertItem</h4>
+							<p>void InsertItem(string name, int num)</p>
+							<p>Insert an new item in SQLServer.</p>
+							<h5>Parameters: name - new item name</h5>
+							<h5></ br>num - new item quantity</h5>
+							</br>
+						</div>
+						<div id=updateitem>
+							<h4>UpdateItem</h4>
+							<p>void UpdateItem(string newname, string oldname)</p>
+							<p>Update one item name in SQLServer.</p>
+							<h5>Parameters: newname - item new name</h5>
+							<h5></ br>oldname - item current name</h5>
+							</br>
+						</div>
+						<div id=updateitemnumber>
+							<h4>UpdateItemNumber</h4>
+							<p>void UpdateItemNumber(string name, int num)</p>
+							<p>Update one item quantity in SQLServer.</p>
+							<h5>Parameters: name - item name</h5>
+							<h5>num - item new quantity</h5>
+							</br>
+						</div>
+						<div id=deleteitem>
+							<h4>DeleteItem</h4>
+							<p>void DeleteItem(string name)</p>
+							<p>Delete one item in SQLServer.</p>
+							<h5>Parameters: name - item name</h5>
+							</br>
+						</div>
+						<div id=searchitemnumber>
+							<h4>SearchItemNumber</h4>
+							<p>int SearchItemNumber(string name)</p>
+							<p>Extract specific item quantity.</p>
+							<h5>Parameters: name - item name</h5>
+							<p>return item quantity</p>
+							</br>
+						</div>
+						<div id=getitem>
+							<h4>GetItem</h4>
+							<p>Warehouse GetItem(string name)</p>
+							<p>Extract specific Warehouse item.</p>
+							<h5>Parameters: name - item name</h5>
+							<p>return item</p>
+							</br>
+						</div>
+						<div id=isavailable>
+							<h4>IsAvailable</h4>
+							<p>bool IsAvailable(string item, int num)</p>
+							<p>Used to check the request item number whether available or not in stock.</p>
+							<h5>Parameters: name - request item name</h5>
+							<h5>num: request quantity</h5>
+							<p>return true if item quantity greater than or equal to request quantity, else false</p>
+							</br>
+						</div>
+				</div>
+			<div id="footer"><p>2014 QUT INN374</p>
+			</div>
+		</div>
+	</body> 
+</html> 
